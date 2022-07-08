@@ -6,6 +6,9 @@
     --light: #FAFAFB;
     --dark: #12141D;
 }
+body {
+    background-color: #95C8BC;
+}
 p {
     font-size: 20px;
 }
@@ -16,6 +19,11 @@ p {
     bottom: 45px;
     z-index: 99;
 }
+
+.required:after {
+    content:" *";
+    color: red;
+  }
 
 .my-6 {
     margin-top: 6rem;
