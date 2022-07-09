@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+<body class="body-product" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -72,7 +72,7 @@
             <!-- MORE PHOTOS -->
             <!-- PRODUCT VIDEO -->
             <div class="text-center wow fadeInUp mt-5" data-wow-delay="0.3s">
-                <video width="620" height="440" controls>
+                <video width="330" height="440" controls>
                     <source src="img/Rechargeable Clipper And Trimmer_001_001.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -105,7 +105,7 @@
             </div>
 
             <!-- FILL THE FORM -->
-            <h3 class="my-5 px-2 bg-warning text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Please fill the form below TO PLACE YOUR ORDER. Do not order if you will be UNAVAILABLE to receive your order in the next 24-48hrs.</h3>
+            <h3 class="my-5 px-2 bg-warning text-center mb-5 wow fadeInUp text-light" data-wow-delay="0.1s">Please fill the form below with your ACCURATE information TO PLACE YOUR ORDER. Do not order if you will be UNAVAILABLE to receive your order in the next 24-48hrs.</h3>
 
 
             
@@ -115,50 +115,56 @@
                 <form name="product" method="POST" role="" data-netlify="true">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <input required name="name" type="text" class="form-control" id="name" placeholder="Full Name">
+                            <div>
                                 <label required class="required" for="name">Full Name</label>
+                                <input required name="name" type="text" class="form-control" id="name">
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <input name="email" type="email" class="form-control" id="email" placeholder="Email Address (Optional)">
-                                <label for="email">Email Address (Optional)</label>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input name="email" type="email" class="form-control" id="email">                                
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="form-floating">
-                                <input required name="tel" type="tel" class="form-control" id="tel" placeholder="Telephone (Please Double Check)">
-                                <label for="tel" class="required">Telephone (Please Double Check)</label>
+                            <div>
+                                <label for="tel" class="required">Telephone</label>
+                                <input required name="tel" type="tel" class="form-control" id="tel">
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="form-floating">
-                                <input required name="state" type="state" class="form-control" id="state" placeholder="State">
+                            <div>
                                 <label for="tel" class="required">State</label>
+                                <input required name="state" type="state" class="form-control" id="state">                               
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="form-floating">
-                                <input required name="address" type="address" class="form-control" id="address" placeholder="Address (Please double check)">
-                                <label for="address" class="required">Address (Please Double Check)</label>
+                            <div>
+                                <label for="address" class="required">Address</label>
+                                <input required name="address" type="address" class="form-control" id="address">
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="form-floating">
-                                <input required name="busstop" type="text" class="form-control" id="busstop" placeholder="Nearest Bus Stop">
-                                <label for="busstop" class="required">Nearest Bus Stop
+                            <div>
+                                <label for="busstop" class="required">Nearest Bus Stop</label>
+                                <input required name="busstop" type="text" class="form-control" id="busstop">
                         </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-floating">
-                                <input required name="many" type="text" class="form-control" id="many" placeholder="How many do you want? You get higher discount when you order from 3 and above.)">
+                            <div>
                                 <label for="address" class="required">How many do you want? (You get higher discount when you order from 3 and above.)</label>
+                                <input required name="many" type="text" class="form-control" id="many">
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary py-3 px-5" type="submit">PLACE ORDER</button>
+                            <button class="btn btn-success py-3 px-5 font-bold" type="submit">PLACE ORDER</button>
                         </div>
+                        <h5 class="text-center my-5 wow fadeInUp" data-wow-delay="0.1s">OR</h5>
+
+                        <!-- chat with us -->
+                        
+                        <a href="https://wa.me/message/RDSUYQXPDBL6C1" class="my-2 px-2 bg-success text-center mb-5 wow fadeInUp" data-wow-delay="0.1s"><h4 class="text-light">CLICK TO CHAT WITH US </h4>
+                        </a>
                     </div>
                 </form>
             </div>
