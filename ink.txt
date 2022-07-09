@@ -1,0 +1,8 @@
+<div class="jumbotron text-center">
+  <h1 class="display-3 text-success">SUCCESS!</h1>
+  <p class="lead">We have received your purchase order, We will get back to you shortly!</p>
+  <hr>
+  <p>
+    Having trouble? <a href="https://wa.me/message/RDSUYQXPDBL6C1" >Contact us</a>
+  </p>
+</div>
